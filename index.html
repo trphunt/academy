@@ -11,8 +11,16 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
         <title>Academy | Education starts here</title>
+        <script>
+          const closeNav = () => {
+            document.getElementById("navi-toggle").checked = false;
+          }
+        </script>
     </head>
     <body>
+
+      <!-- NAVIGATION  -->
+
       <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -24,14 +32,36 @@
 
         <nav class="navigation__nav">
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Academy</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Features</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular courses</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Enroll now</a></li>
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link" onClick="closeNav()">
+                <span>01</span>About Academy
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#features" class="navigation__link" onClick="closeNav()">
+                <span>02</span>Features
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#courses" class="navigation__link" onClick="closeNav()">
+                <span>03</span>Popular courses
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#stories" class="navigation__link" onClick="closeNav()">
+                <span>04</span>Stories
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#enroll" class="navigation__link" onClick="closeNav()">
+                <span>05</span>Enroll now
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
+
+      <!-- HEADER -->
 
       <header class="header">
         <div class="header__logo-box">
@@ -47,11 +77,13 @@
           <a href="#" class="btn btn--white btn--animated">Discover our courses</a>
         </div>
       </header>
-
       <main>
+
+        <!-- ABOUT SECTION -->
+
         <section class="section-about">
           <div class="u-center-text u-margin-bottom-big">
-            <h2 class="heading-secondary">
+            <h2 class="heading-secondary" id="about">
               Exciting courses for enthusiastic students
             </h2>
           </div>
@@ -80,8 +112,9 @@
           </div>
         </section>
 
-        <section class="section-features">
+        <!-- FEATURE SECTION -->
 
+        <section class="section-features" id="features">
           <div class="row">
             <div class="col-1-of-4">
               <div class="feature-box">
@@ -125,9 +158,11 @@
           </div>
         </section>
 
+        <!-- COURSES SECTION  -->
+
         <section class="section-courses">
           <div class="u-center-text u-margin-bottom-big">
-            <h2 class="heading-secondary">
+            <h2 class="heading-secondary" id="courses">
               Most popular courses
             </h2>
           </div>
@@ -235,6 +270,8 @@
             </div>
         </section>
 
+        <!-- STORY SECTION -->
+
         <section class="section-stories">
           <div class="bg-video">
             <video class="bg-video__content" autoplay muted loop>
@@ -245,7 +282,7 @@
           </div>
 
           <div class="u-center-text">
-            <h2 class="heading-secondary u-margin-bottom-big">
+            <h2 class="heading-secondary u-margin-bottom-big" id="stories">
               We instill confidence in our students
             </h2>
 
@@ -284,13 +321,15 @@
             </div>
         </section>
 
+        <!-- ENROLL FORM -->
+
         <section class="section-enroll">
           <div class="row">
             <div class="enroll">
               <div class="enroll__form">
                 <form action="#" class="form">
                   <div class="u-margin-bottom-medium">
-                    <h2 class="heading-secondary">
+                    <h2 class="heading-secondary" id="enroll">
                       Enroll now
                     </h2>
                   </div>
@@ -323,7 +362,7 @@
                   </div>
 
                 <div class="form__group">
-                  <button class="btn btn--blue">Next step &rarr;</button>
+                  <button class="btn btn--blue">Continue &rarr;</button>
                 </div>
                 </form>
               </div>
@@ -331,6 +370,8 @@
           </div>
         </section>
       </main>
+
+      <!-- FOOTER -->
 
       <footer class="footer">
         <div class="footer__logo-box">

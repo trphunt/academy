@@ -37,6 +37,8 @@
     z-index: 1500;
 
     opacity: 0;
+    height: 0;
+    overflow: hidden;
     width: 0;
     transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
@@ -86,6 +88,7 @@
   }
 
   &__checkbox:checked ~ &__nav {
+    height: 100vh;
     opacity: 1;
     width: 100%;
   }
