@@ -1,7 +1,12 @@
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 40rem 0;
+  padding: 35rem 0;
   margin-top: -25vh;
+
+  @include respond(tab-port) {
+    margin-top: -20vh;
+    padding: 30rem 0 45rem 0;
+  }
 }
 
 .section-features {
@@ -21,17 +26,26 @@
   & > * {
     transform: skewY(7deg);
   }
+
+  @include respond(tab-port) {
+    padding: 15rem 0;
+  }
 }
 
 .section-courses {
   background-color: $color-grey-light-1;
   padding: 40rem 0 15rem 0;
-  margin-top: -20rem;
+  margin-top: -25rem;
+
+  @include respond(tab-port) {
+    padding: 20rem 0 10rem 0;
+    margin-top: -10rem;
+  }
 }
 
 .section-stories {
   position: relative;
-  padding: 15rem 0;
+  padding: 10rem 0;
 }
 
 .section-enroll {
