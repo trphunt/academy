@@ -5,7 +5,7 @@
 
   @include respond(tab-port) {
     margin-top: -20vh;
-    padding: 30rem 0 45rem 0;
+    padding: 30rem 5rem 45rem 5rem;
   }
 }
 
@@ -28,7 +28,7 @@
   }
 
   @include respond(tab-port) {
-    padding: 15rem 0;
+    padding: 10rem 0;
   }
 }
 
@@ -45,12 +45,24 @@
 
 .section-stories {
   position: relative;
-  padding: 10rem 0;
+  padding: 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+
+  @include respond(phone) {
+    padding: 8rem 5rem;
+  }
 }
 
 .section-enroll {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .enroll {
