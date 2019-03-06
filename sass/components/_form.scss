@@ -74,6 +74,7 @@
 
     &::after {
       @include center-horizontal-vertical;
+      
       content: "";
       display: block;
       height: 1.3rem;
