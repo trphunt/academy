@@ -580,7 +580,7 @@ body {
       transform: translate(-10rem) skewX(-12deg); } }
   @media (max-width: 37.5em) {
     .story {
-      width: 125%;
+      width: 130%;
       transform: translate(-5rem) skewX(0); } }
   .story__shape {
     width: 15rem;
